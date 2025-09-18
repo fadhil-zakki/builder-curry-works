@@ -22,7 +22,15 @@ const App = () => (
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Index />} />
-            <Route path="kontak" element={<Placeholder title="Kontak" description="Silakan hubungi saya untuk kolaborasi atau pertanyaan terkait proyek." />} />
+            <Route
+              path="kontak"
+              element={
+                <Placeholder
+                  title="Kontak"
+                  description="Silakan hubungi saya untuk kolaborasi atau pertanyaan terkait proyek."
+                />
+              }
+            />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
